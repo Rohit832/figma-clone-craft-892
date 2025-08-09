@@ -57,8 +57,8 @@ const HowItWorks: React.FC = () => {
         className="absolute w-full h-full object-cover opacity-40 -rotate-90 left-0 top-0"
       />
       
-      <div className="relative flex max-w-[1400px] gap-[60px] items-start mx-auto my-0 px-5 py-[50px] max-md:flex-col max-md:gap-10 max-md:px-5 max-md:py-[30px] max-sm:px-[15px] max-sm:py-5">
-        <section className="relative flex-1 min-w-[400px] left-[section] max-md:min-w-[auto] max-md:w-full">
+      <div className="relative grid max-w-[1120px] grid-cols-1 md:grid-cols-2 gap-10 items-start mx-auto px-5 py-12 md:gap-12 md:py-14">
+        <section className="relative flex-1 md:pr-2">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/a09a9f2100b20bb41c7946f2b51b4050dde703cd?width=1017"
             alt="Illustration"
@@ -98,7 +98,7 @@ const HowItWorks: React.FC = () => {
           </div>
         </section>
         
-        <section className="flex-1 min-w-[500px] pl-10 right-[section] max-md:min-w-[auto] max-md:w-full">
+        <section className="flex-1 w-full md:pl-10">
           <header className="relative mb-10">
             <div className="mb-5">
               <h1 className="text-5xl font-bold text-black mb-3 max-md:text-4xl max-sm:text-[28px]">
@@ -131,7 +131,7 @@ const HowItWorks: React.FC = () => {
             ))}
           </article>
           
-          <section className="flex gap-10 items-start mb-10 max-md:flex-wrap max-md:justify-center max-md:gap-[30px] max-sm:flex-col max-sm:items-center">
+          <section className="flex items-start justify-between gap-6 mb-10 flex-wrap md:flex-nowrap md:gap-10 md:justify-between">
             {features.map((feature, index) => (
               <FeatureCard
                 key={index}
