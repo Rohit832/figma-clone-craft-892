@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   numberText 
 }) => {
   return (
-    <div className="flex flex-col items-center relative max-sm:mb-5">
+    <div className="flex flex-col items-center relative max-sm:mb-5 w-[150px] md:w-[170px]">
       <img
         src={image}
         alt={altText}
